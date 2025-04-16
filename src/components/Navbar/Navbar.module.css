@@ -1,0 +1,16 @@
+.nav {
+    display: flex;
+    column-gap: 20px;
+    cursor: pointer;
+}
+
+.nav-item {
+    transition: all 0.3s ease;
+    box-sizing: content-box;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-item:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+}
