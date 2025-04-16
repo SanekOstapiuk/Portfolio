@@ -19,7 +19,8 @@ import {
   FaEnvelope,
   FaTelegramPlane,
   FaMapMarkerAlt,
-  FaLinkedin
+  FaLinkedin,
+  FaPhoneAlt
 } from "react-icons/fa";
 
 export const aboutMeBlock = {
@@ -130,7 +131,8 @@ export const contactsBlock = {
   id: 'contacts',
   telegram: {
     label: 'Telegram',
-    value: '+380664130346',
+    value: '@ostapiuksanekk',
+    link: 'https://t.me/ostapiuksanekk',
     icon: FaTelegramPlane
   },
   email: {
@@ -144,6 +146,11 @@ export const contactsBlock = {
     value: 'www.linkedin.com/in/ostoleks',
     icon: FaLinkedin
   },
+  phone: {
+    label: 'Phone',
+    value: '+380664130346',
+    icon: FaPhoneAlt
+  },
 }
 
 export const location = {
@@ -152,7 +159,7 @@ export const location = {
   icon: FaMapMarkerAlt
 }
 
-export const copyright = '© 2024 Copyright. All Rights Reserved.'
+export const copyright = '© 2025 Copyright. All Rights Reserved.'
 export const logo = 'Front-End Engineer'
 
 export const heroBlock = {

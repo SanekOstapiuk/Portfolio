@@ -14,7 +14,7 @@ const Contacts = () => {
         <h2 className={cx('contacts-title')}>{contactsBlock.label}</h2>
         <ul className={cx('contacts-list')} data-aos='fade-up'>
           <li className={cx('contact-item')} data-aos='fade-up'>
-            <a href={`tel:${contactsBlock.telegram.value}`} className={cx('contact-link')}>
+            <a href={contactsBlock.telegram.link} className={cx('contact-link')} target="_blank">
               <h4 className={cx('contact-title')}>
                 <contactsBlock.telegram.icon className={cx('contact-icon')} />
                 <span>{contactsBlock.telegram.label}</span>
@@ -32,12 +32,21 @@ const Contacts = () => {
             </a>
           </li>
           <li className={cx('contact-item')} data-aos='fade-up'>
-            <a href={contactsBlock.linkedin.link} className={cx('contact-link')}>
+            <a href={contactsBlock.linkedin.link} className={cx('contact-link')} target="_blank">
               <h4 className={cx('contact-title')}>
                 <contactsBlock.linkedin.icon className={cx('contact-icon')} />
                 <span>{contactsBlock.linkedin.label}</span>
               </h4>
               <span className={cx('contact-value')}>{contactsBlock.linkedin.value}</span>
+            </a>
+          </li>
+          <li className={cx('contact-item')} data-aos='fade-up'>
+            <a href={`tel:${contactsBlock.phone.value}`} className={cx('contact-link')}>
+              <h4 className={cx('contact-title')}>
+                <contactsBlock.phone.icon className={cx('contact-icon')} />
+                <span>{contactsBlock.phone.label}</span>
+              </h4>
+              <span className={cx('contact-value')}>{contactsBlock.phone.value}</span>
             </a>
           </li>
         </ul>
