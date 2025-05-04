@@ -12,7 +12,7 @@ const Projects = () => {
 
   return (
     <section className={cx('container', 'projects')} id={id}>
-      <div className={cx('wrapper')}>
+      <div className={cx('wrapper')} data-aos='fade-up'>
         <MainTitle title={label}/>
         <ul className={cx('projects-list')}>
           {projects.map((project, index) => (

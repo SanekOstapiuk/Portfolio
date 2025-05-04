@@ -33,7 +33,7 @@ const Skills = () => {
         <MainTitle title={label} />
         <ul className={cx('skills-list')}>
           {showSkills.map((skill, index) => (
-            <li key={index} className={cx('skill')}>
+            <li key={index} className={cx('skill')} data-aos='fade-up'>
               <h4 className={cx('skill-title')}>
                 <Icon className={cx('skill-icon')} name={skill.icon}/>
                 <span className={cx('skill-label')}>{skill.label}</span>

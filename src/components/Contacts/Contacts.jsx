@@ -23,7 +23,7 @@ const Contacts = () => {
       <div className={cx('contacts-wrapper')} data-aos='fade-up'>
         <MainTitle title={label}/>
         <ul className={cx('contacts-list')} data-aos='fade-up'>
-          <li className={cx('contact-item')} data-aos='fade-up'>
+          <li className={cx('contact-item')}>
             <a href={telegram.link} className={cx('contact-link')} target="_blank">
               <h4 className={cx('contact-title')}>
                 <Icon className={cx('contact-icon')} name={telegram.icon}/>
@@ -32,7 +32,7 @@ const Contacts = () => {
               <span className={cx('contact-value')}>{telegram.value}</span>
             </a>
           </li>
-          <li className={cx('contact-item')} data-aos='fade-up'>
+          <li className={cx('contact-item')}>
             <a href={`mailto:${email.value}`} className={cx('contact-link')}>
               <h4 className={cx('contact-title')}>
                 <Icon className={cx('contact-icon')} name={email.icon}/>
@@ -41,7 +41,7 @@ const Contacts = () => {
               <span className={cx('contact-value')}>{email.value}</span>
             </a>
           </li>
-          <li className={cx('contact-item')} data-aos='fade-up'>
+          <li className={cx('contact-item')}>
             <a href={linkedin.link} className={cx('contact-link')} target="_blank">
               <h4 className={cx('contact-title')}>
                 <Icon className={cx('contact-icon')} name={linkedin.icon}/>
@@ -50,7 +50,7 @@ const Contacts = () => {
               <span className={cx('contact-value')}>{linkedin.value}</span>
             </a>
           </li>
-          <li className={cx('contact-item')} data-aos='fade-up'>
+          <li className={cx('contact-item')}>
             <a href={`tel:${phone.value}`} className={cx('contact-link')}>
               <h4 className={cx('contact-title')}>
                 <Icon className={cx('contact-icon')} name={phone.icon}/>
