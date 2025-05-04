@@ -1,0 +1,147 @@
+.certificates {
+  display: flex;
+}
+
+.certificates h2 {
+  margin-bottom: 20px;
+}
+
+.certificates-wrapper {
+  margin-top: 100px;
+  max-width: 100%;
+}
+
+.image {
+  max-width: 75%;
+  margin-bottom: 20px;
+}
+
+.course-title {
+  width: 75%;
+}
+
+.name,
+.company {
+  width: 50%;
+  color: var(--white);
+  font-size: 20px;
+  margin-bottom: 6px;
+  display: inline-block;
+}
+
+.company {
+  text-align: right;
+}
+
+.skills {
+  width: 75%;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.skill {
+  display: inline-block;
+  color: var(--white);
+  background: var(--black);
+  border-radius: 10px;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.8);
+  padding: 10px;
+}
+
+.certificates :global(.swiper-slide) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.certificates :global(.swiper-button-prev),
+.certificates :global(.swiper-button-next) {
+  color: var(--white);
+  top: 40%;
+}
+
+.certificates :global(.swiper-button-prev) {
+  left: 7%;
+}
+
+.certificates :global(.swiper-button-next) {
+  right: 7%;
+}
+
+.certificates :global(.swiper-pagination-bullets) {
+  display: none;
+}
+
+.certificates :global(.swiper-pagination-bullet) {
+  margin: 0;
+  padding: 8px;
+}
+
+.certificates :global(.swiper-pagination-bullet-active) {
+  background-color: white;
+}
+
+@media (max-width: 1024px) {
+  .image {
+    max-width: 90%;
+  }
+
+  .skills {
+    width: 90%;
+  }
+
+  .course-title {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .certificates :global(.swiper-button-prev),
+  .certificates :global(.swiper-button-next) {
+    display: none;
+  }
+
+  .certificates .certificates-wrapper :global(.swiper-pagination-bullets) {
+    display: block;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .name {
+    font-size: 21px;
+    margin-bottom: 0;
+    line-height: 1.2;
+  }
+
+  .company {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+
+  .image {
+    max-width: 100%;
+  }
+
+  .course-title {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .name,
+  .company {
+    width: auto;
+    display: block;
+  }
+
+  .name {
+    font-size: 18px;
+  }
+
+  .company {
+    text-align: left;
+  }
+}

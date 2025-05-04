@@ -1,7 +1,13 @@
 .nav {
     display: flex;
+    justify-content: center;
     column-gap: 20px;
     cursor: pointer;
+    flex-wrap: wrap;
+}
+
+.wrapper {
+    width: 44%;
 }
 
 .nav-item {
@@ -13,4 +19,10 @@
 .nav-item:hover {
     color: var(--accent);
     border-color: var(--accent);
+}
+
+@media (max-width: 1024px) {
+    .wrapper {
+        width: auto;
+    }
 }

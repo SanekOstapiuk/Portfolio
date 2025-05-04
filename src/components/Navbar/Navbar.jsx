@@ -1,6 +1,6 @@
-import classNames from 'classnames/bind';
+import classNames from 'classnames/bind'
 
-import ScrollToSection from '../ScrollToSection/ScrollToSection';
+import ScrollToSection from '../ScrollToSection/ScrollToSection'
 import { menu } from '../../constants/data'
 
 import styles from './Navbar.module.css'
@@ -9,7 +9,7 @@ const cx = classNames.bind(styles)
 
 const Navbar = () => {
   return (
-    <nav >
+    <nav className={cx('wrapper')}>
       <ul className={cx('nav')}>
         {menu?.map((item) => (
           <li key={item.id} className={cx('nav-item')}>
@@ -18,7 +18,7 @@ const Navbar = () => {
         ))}
       </ul>
     </nav>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

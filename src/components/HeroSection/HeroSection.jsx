@@ -1,9 +1,10 @@
-import classNames from 'classnames/bind';
+import classNames from 'classnames/bind'
 
-import { heroBlock } from '../../constants/data.js';
-import ScrollToSection from '../ScrollToSection/index.js';
+import { heroBlock } from '../../constants/data.js'
+import ScrollToSection from '../ScrollToSection/index.js'
 
 import styles from './HeroSection.module.css'
+import BirdsButton from '../BirdsButton'
 
 const cx = classNames.bind(styles)
 
@@ -14,12 +15,13 @@ const HeroSection = () => {
         <h1 className={cx('hero-title')}>{heroBlock.title}</h1>
         <span className={cx('hero-subtitle')}>{heroBlock.subtitle}</span>
         <span className={cx('hero-text')}>{heroBlock.description}</span>
+        <BirdsButton />
         <ScrollToSection className={cx('scroll-button')} elementId={heroBlock.scrollToElement}>
           <div className={cx('circle')} />
         </ScrollToSection>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default HeroSection;
+export default HeroSection

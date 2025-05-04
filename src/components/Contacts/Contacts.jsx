@@ -1,52 +1,62 @@
-import { contactsBlock } from '../../constants/data.js'
-
 import classNames from 'classnames/bind'
+
+import { contactsBlock } from '../../constants/data.js'
+import MainTitle from '../MainTitle'
+import Icon from '../Icon'
 
 import styles from './Contacts.module.css'
 
 const cx = classNames.bind(styles)
 
 const Contacts = () => {
+  const {
+    label,
+    id,
+    telegram,
+    linkedin,
+    email,
+    phone
+  } = contactsBlock
 
   return (
-    <section className={cx('container', 'contacts')} id={contactsBlock.id}>
+    <section className={cx('container', 'contacts')} id={id}>
       <div className={cx('contacts-wrapper')} data-aos='fade-up'>
-        <h2 className={cx('contacts-title')}>{contactsBlock.label}</h2>
+        <MainTitle title={label}/>
         <ul className={cx('contacts-list')} data-aos='fade-up'>
           <li className={cx('contact-item')} data-aos='fade-up'>
-            <a href={contactsBlock.telegram.link} className={cx('contact-link')} target="_blank">
+            <a href={telegram.link} className={cx('contact-link')} target="_blank">
               <h4 className={cx('contact-title')}>
-                <contactsBlock.telegram.icon className={cx('contact-icon')} />
-                <span>{contactsBlock.telegram.label}</span>
+                <Icon className={cx('contact-icon')} name={telegram.icon}/>
+                <span>{telegram.label}</span>
               </h4>
-              <span className={cx('contact-value')}>{contactsBlock.telegram.value}</span>
+              <span className={cx('contact-value')}>{telegram.value}</span>
             </a>
           </li>
           <li className={cx('contact-item')} data-aos='fade-up'>
-            <a href={`mailto:${contactsBlock.email.value}`} className={cx('contact-link')}>
+            <a href={`mailto:${email.value}`} className={cx('contact-link')}>
               <h4 className={cx('contact-title')}>
-                <contactsBlock.email.icon className={cx('contact-icon')} />
-                <span>{contactsBlock.email.label}</span>
+                <Icon className={cx('contact-icon')} name={email.icon}/>
+                <span>{email.label}</span>
               </h4>
-              <span className={cx('contact-value')}>{contactsBlock.email.value}</span>
+              <span className={cx('contact-value')}>{email.value}</span>
             </a>
           </li>
           <li className={cx('contact-item')} data-aos='fade-up'>
-            <a href={contactsBlock.linkedin.link} className={cx('contact-link')} target="_blank">
+            <a href={linkedin.link} className={cx('contact-link')} target="_blank">
               <h4 className={cx('contact-title')}>
-                <contactsBlock.linkedin.icon className={cx('contact-icon')} />
-                <span>{contactsBlock.linkedin.label}</span>
+                <Icon className={cx('contact-icon')} name={linkedin.icon}/>
+                <span>{linkedin.label}</span>
               </h4>
-              <span className={cx('contact-value')}>{contactsBlock.linkedin.value}</span>
+              <span className={cx('contact-value')}>{linkedin.value}</span>
             </a>
           </li>
           <li className={cx('contact-item')} data-aos='fade-up'>
-            <a href={`tel:${contactsBlock.phone.value}`} className={cx('contact-link')}>
+            <a href={`tel:${phone.value}`} className={cx('contact-link')}>
               <h4 className={cx('contact-title')}>
-                <contactsBlock.phone.icon className={cx('contact-icon')} />
-                <span>{contactsBlock.phone.label}</span>
+                <Icon className={cx('contact-icon')} name={phone.icon}/>
+                <span>{phone.label}</span>
               </h4>
-              <span className={cx('contact-value')}>{contactsBlock.phone.value}</span>
+              <span className={cx('contact-value')}>{phone.value}</span>
             </a>
           </li>
         </ul>

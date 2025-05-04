@@ -1,3 +1,3 @@
-import StarsCanvas from "./StarsCanvas";
+import StarsCanvas from './StarsCanvas'
 
 export default StarsCanvas

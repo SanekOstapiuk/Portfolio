@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   background-color: var(--grey);
-  background-image: url('../../img/hero-bg.png');
+  background-image: url('hero-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -15,6 +15,7 @@
 
 .hero-wrapper {
   color: var(--white);
+  overflow: hidden;
 }
 
 .hero-subtitle {
@@ -46,6 +47,11 @@
   background-color: var(--white);
   border-radius: 50%;
   animation: jump 1s infinite;
+}
+
+.hero-text {
+  display: inline-block;
+  margin-bottom: 80px;
 }
 
 @media (max-width: 768px) {

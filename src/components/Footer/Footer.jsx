@@ -1,6 +1,7 @@
-import classNames from 'classnames/bind';
+import classNames from 'classnames/bind'
 
-import { location, copyright } from '../../constants/data.js';
+import { location, copyright } from '../../constants/data.js'
+import Icon from '../Icon'
 
 import styles from './Footer.module.css'
 
@@ -12,7 +13,7 @@ const Footer = () => {
       <div className='container'>
         <div className={cx('footer-wrapper')}>
           <div className={cx('location-wrapper')}>
-            <location.icon className={cx('location-icon')}/>
+            <Icon className={cx('location-icon')} name={location.icon} size={20}/>
             <span className={cx('location-label')}>{location.label}</span>
             <span>{location.value}</span>
           </div>
@@ -20,7 +21,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

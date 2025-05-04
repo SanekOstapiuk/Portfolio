@@ -5,14 +5,14 @@
   line-height: 1.5;
   font-weight: 400;
   /* Colors */
-  --blackpure: #000;
   --black: #171718;
-  --black-border: #26292d;
   --white: #fff;
-  --purple: #5c62ec;
-  --nav-bg-hover: #1a1a1a;
   --accent: #5c62ec;
   --grey: #252526;
+  --black-purple: #060816;
+  --yellow: #e9b800;
+  --tundora: #4D4D4D;
+  --social: #0027a8;
 }
 
 body {
@@ -38,6 +38,6 @@ h1 {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
