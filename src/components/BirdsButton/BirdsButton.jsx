@@ -15,7 +15,7 @@ const BirdsButton = () => {
 
   return (
     <div className={cx('container', 'wrapper')}>
-      <a href='/Portfolio/OleksandrOstapiukCV.pdf' className={cx('button-birds')} download>
+      <a href='/Portfolio/OleksandrOstapiukResume.pdf' className={cx('button-birds')} download>
         <div className={cx('button-box')}>
           <span className={cx('button-text')}>My CV</span>
           <Icon name='cloud' className={cx('cloud-icon')} color='white'/>
